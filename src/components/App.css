@@ -1,0 +1,147 @@
+#root {
+	max-width: 360px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+.game-container {
+	width: 360px;
+	height: 640px;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.top {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	position: relative;
+}
+
+.machine-bg {
+	position: relative;
+	top: 3.5%;
+	left: 25%;
+	width: 50%;
+	height: 85%;
+	object-fit: cover;
+	z-index: 0;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.hammer {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	top: 81%;
+	left: 69%;
+	transform-origin: bottom center;
+	transition: transform 0.2s;
+	z-index: 2;
+	transform: rotate(-44deg) translateY(-30px);
+}
+.hammer-prepare {
+	transform: translateX(-49px) translateY(-43px);
+}
+.hammer-hit {
+	transform: rotate(-90deg) translateY(-49px) translateX(+89px);
+}
+
+.hit-button {
+	position: absolute;
+	width: 120px;
+	bottom: -5%;
+	left: 32%;
+	transition: transform 0.1s;
+}
+.hit-button:active {
+	transform: scale(0.95);
+}
+
+/* =========================================================================== */
+
+.bottom {
+	height: 43%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	align-items: end;
+	margin-bottom: 67px;
+	overflow: hidden;
+}
+
+.power-scale-bg {
+	width: 48px;
+	height: 147px;
+	margin-left: 20px;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 10;
+}
+
+.power-scale {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 1;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.scale {
+	position: absolute;
+	left: 7%;
+	bottom: 10.7%;
+	width: 10.5%;
+	border-radius: 4px;
+	background-color: #00ff08; /* зеленый цвет */
+	transition: height 0.4s linear; /* плавное изменение высоты */
+	opacity: 55%;
+	z-index: 0;
+}
+
+.start-screen__text {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 100%;
+}
+
+.result-robot {
+	width: 100px;
+	display: block;
+	margin-bottom: -1px;
+}
+
+/* =========================================================================== */
+
+.button {
+	width: 172px;
+	height: 36px;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid;
+	padding-bottom: 12px;
+}
+.button-new-game {
+	color: white;
+	background-color: #ff42e0;
+}
+.button-hit {
+	color: #bb20a2;
+	background-color: #ffdf35;
+}

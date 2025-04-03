@@ -1,0 +1,55 @@
+.scale-container {
+	position: relative;
+	width: 47%;
+	top: 7%;
+	left: 26%;
+}
+
+/* Верхняя часть шкалы с рубином */
+.scale-top,
+.scale-top-prize {
+	height: 50px;
+	width: 100%;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+.scale-top {
+	background: linear-gradient(to bottom, #7a58a3, #413174);
+}
+.scale-top-prize {
+	background: linear-gradient(to bottom, #ff9494, #ff0101);
+}
+
+.ruby-glow {
+	position: absolute;
+	top: 7%;
+	left: 50%;
+	width: 90px;
+	height: 90px;
+	background: url('../assets/icons/ruby_glow.png') no-repeat center center;
+	background-size: contain;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	pointer-events: none;
+}
+
+/* Стили для изображения рубина */
+.ruby-img {
+	position: relative;
+	width: 70px;
+	height: 70px;
+	bottom: 20%;
+}
+
+.scale-body {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.segment {
+	height: 20px;
+	background: linear-gradient(to bottom, #ffffff, #5068ac);
+	border-radius: 4px;
+	transition: background 1.3s ease;
+}
