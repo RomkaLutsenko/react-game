@@ -161,9 +161,7 @@ function Game() {
 				)}
 				{gameState === 'playing' && (
 					<div className='start-screen'>
-						<p className='start-screen__text'>
-							Нажмите в нужный момент для максимальной силы!
-						</p>
+						<p className='start-screen__text'>Жми на кнопку в нужный момент!</p>
 						<button onClick={handleHit} className='button button-hit'>
 							УДАР!
 						</button>

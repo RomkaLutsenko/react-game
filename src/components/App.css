@@ -1,10 +1,3 @@
-#root {
-	max-width: 360px;
-	margin: 0 auto;
-	padding: 2rem;
-	text-align: center;
-}
-
 .game-container {
 	width: 360px;
 	height: 640px;
@@ -135,7 +128,7 @@
 	align-items: center;
 	justify-content: center;
 	border: 1px solid;
-	padding-bottom: 12px;
+	font-weight: bold;
 }
 .button-new-game {
 	color: white;
